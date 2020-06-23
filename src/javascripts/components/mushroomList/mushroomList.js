@@ -7,7 +7,6 @@ import mushroomComponent from '../mushroom/mushroom';
 const buildForest = () => {
   mushroomData.getMushrooms()
     .then((mushrooms) => {
-      console.error('Get Mushrooms worked!', mushrooms);
       let domString = `
         <h2 class="text-center">Forest</h2>
         <div class="d-flex flex-wrap justify-center">`;
@@ -21,8 +20,6 @@ const buildForest = () => {
       utils.printToDom('#forest', domString);
     })
     .catch((err) => console.error('got mushrooms broke', err));
-  // const domString = '<h1>It does Work</h1>';
-  // utils.printToDom('#forest', domString);
 };
 
 export default { buildForest };
