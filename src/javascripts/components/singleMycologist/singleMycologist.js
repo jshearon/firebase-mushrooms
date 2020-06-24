@@ -2,12 +2,18 @@ import mycologistData from '../../helpers/data/mycologistData';
 import utils from '../../helpers/utils';
 
 import './singleMycologist.scss';
+import mycologistMushroomData from '../../helpers/data/mycologistMushroomData';
 
 const buildMycologist = (e) => {
   const mycologistId = e.target.closest('.card').id;
   mycologistData.getMycologistById(mycologistId)
     .then((response) => {
       const mycologist = response.data;
+
+      mycologistMushroomData.getMycoShroomsByMycoUid(mycologist.uid)
+        .then((res) => console.error('worked', res))
+        .catch((err) => console.error('prob in getMycoshromoms', err));
+
       const domString = `
         <h2 class="text-center">Featured Mycologist</h2>
         <div class="col-12">
