@@ -1,5 +1,5 @@
 {
-  "mycilogist": {
+  "mycologist1": {
     "name": "Jonathan",
     "age": "42",
     "uid": "OfX8Mq06SJS8FekvVRfL7DJpYjx1"
@@ -7,11 +7,11 @@
   "mycologist2": {
     "name": "Michael",
     "age": "120",
-    "uid": ""
+    "uid": "2454363456"
   },
   "mycologist3": {
     "name": "Matt",
     "age": "10",
-    "uid": ""
+    "uid": "472572457"
   }
 }
